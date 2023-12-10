@@ -1,0 +1,145 @@
+body {
+  background-image: url('BI.jpeg'); /* Replace 'path/to/your/image.jpg' with your image file path */
+  background-size: cover; /* Ensures the image covers the entire body */
+  /* Additional properties to adjust the background image as needed */
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    margin-top: 18%;
+    margin-left: 45%;
+  }
+
+  
+  
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    z-index: 1;
+  } */
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  .dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown p:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+.grid-container-tickets {
+     margin-top:70px;
+     margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(10, 100px); 
+    grid-gap: 10px; 
+}
+
+.grid-item-tickets {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.grid-container-movies {
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    top:20%;
+    width:90%;
+    height:60%;
+    margin-left: 4%;
+  }
+  
+  .grid-item-movies {
+    background-color: #ddd; 
+    border: 1px solid #888; 
+    padding: 20px; 
+    text-align: center;
+  }
+
+
+  #bookTicketButton {
+    position: absolute;
+    top: 80%; /* Align to 50% from the top */
+    left: 50%; /* Align to 50% from the left */
+    transform: translate(-50%, -50%); /* Move the button 50% of its own width and height in the opposite direction */
+    
+    /* Add styling for the button as needed */
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #ticketsPrice {
+    position: absolute;
+    top: 75%; /* Align to 50% from the top */
+    left: 10%; /* Align to 50% from the left */
+    background-color: mediumorchid;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .successHeading{
+    justify-content: center;
+    text-align: center;
+    color: greenyellow;
+  }
+
+  .grid-container {
+    background-color: #7b4499; 
+    border: 2px solid #101113; 
+	position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width:30%;
+	height:60%;
+}
